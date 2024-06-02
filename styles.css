@@ -1,0 +1,513 @@
+/* External CSS File for Drone Health Care Website - Roland Acott - 07/04/2024 */
+
+
+/* CSS reset for removing browser default values */
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/* Styles images so they're "responsive" (they shrink down to fit smaller screens) */
+img {
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+/* Sets base px for using rem units */
+html {
+    font-size: 10px;
+}
+
+/* Style body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #3c3838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+/* Style header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 0rem;
+}
+
+
+ul li::marker {
+    font-size: 2rem; /* Adjust the size of the bullet point */
+    color: #7CB2BF; /* Optional: change the color of the bullet point */
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Adjust margin for the list items */
+nav li {
+    margin-right: 3.5rem;
+    
+}
+
+nav li:last-child {
+    margin-right: 0; /* Remove right margin for the last item */
+}
+
+/* Styles for buttons */
+nav button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #333;
+}
+
+nav button:hover {
+    font-weight: bold;
+}
+
+
+/* style Main */
+main {
+    background-color: #ffffff;
+    max-width: 60vw;
+    padding: 0rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+/* Used to style internal links in Main header */
+.top-links {
+    margin-bottom: 0rem;
+}
+
+
+/* Adds consistent padding to specific sections */
+#intro, #operations, #imaging, #emergency, #testimonials, 
+#about-intro, #about-hobby, #about-food, #about-beverage, 
+#resume-interests, #resume-contact,
+#web-skills-sections,
+#key-skills, #projects {
+    
+    padding: 2rem;
+}
+
+
+/* Adds top margins to specific sections for spacing */
+#operations, #imaging, #emergency, #testimonials, 
+#about-intro, #about-hobby, #about-food, #about-beverage, 
+#web-skills-sections,
+#key-skills, #projects {
+    
+    margin-top: 2rem;
+}
+
+/* Adds bottom margins to <h3> of specific sections for spacing */
+#intro h3, #operations h3, #imaging h3, #emergency h3,
+#about-intro h3, #about-hobby h3, #about-food h3, #about-beverage h3, 
+#web-skills-sections h3, 
+#resume-skills h3, #resume-education h3, #resume-employment h3, #resume-interests h3,
+#key-skills h3, #projects h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Adds top margins to <p> of specific sections for spacing */
+#intro p, #operations p, #imaging p, #emergency p, #resume-sections p, 
+#about-intro p, #about-hobby p, #about-food p, #about-beverage p, 
+#web-skills-sections p, 
+#resume-skills p, #resume-education p, #resume-employment p, #resume-interests p,
+#key-skills p {
+    margin-top: 1rem;
+}
+
+/* Floats image to right of text within container */
+.image-float-right { 
+    float: right;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+/* Container for storing different sections */
+.container-section {
+    overflow: auto; /* prevents images from floating below text within container */
+}
+
+/* Button for internally linking to top of page */
+.back-to-top-button {
+    border: 0.1rem solid #7CB2BF;
+    background-color: #ffffff;
+    color: #3c3838;
+    margin-top: 5rem;
+    padding: 0.6rem;
+    width: 20rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.back-to-top-button:hover {
+    background-color: #7CB2BF;
+    color: #ffffff;
+}
+  
+
+/* Container for centering button */
+.center-button {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;
+}
+
+/* Used to create a container for each testimony */
+.container-testimonials {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+    border: 0.1rem solid #7CB2BF;
+    border-left: 0.8rem solid #7CB2BF;
+    padding: 2rem; 
+}
+
+/* Creates space between testimonial image and text within container */
+.image-testimonials {
+    margin-right: 2rem;
+}
+
+/* Text to be used with floating images */
+.text-and-image {
+    font-size: 1.6rem;
+    max-width: 50rem;
+}
+
+/* Change font size, line height, and style of <p> */
+p { 
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* style footer */
+footer {
+    background-color: #7CB2BF; 
+    color: #fff; 
+    padding: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+}
+
+
+.footer-links button{
+    color: #fff;
+}
+
+/* change font size of <h3> */
+h3 {
+    font-size: 1.8rem
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!!! RESUME PAGE CSS !!!! */
+
+
+/* change font size and colour of resume <h3> */
+h3.resume-heading {
+    font-size: 2.0rem;
+    color: #7CB2BF;
+    border: 1px solid #7CB2BF;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Container for storing rows and columns*/
+.container2 {
+    margin: 1.5rem;
+    overflow: auto;
+}
+
+/* Styles for table */
+.container2 table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+/* Styles for table rows */
+.container2 tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+/* Styles for table cells */
+.container2 td {
+    flex: 1;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+/* Styles for table headers */
+.container2 th {
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+}
+
+/* Styles for Resume Intro Row */
+.intro-row{
+    text-align: center;
+    /*border-bottom: 5px solid #7CB2BF;*/
+}
+
+/* Styles for Resume Center Column */
+td.center-column {
+    border-right: 1px solid #7CB2BF;
+    border-left: 1px solid #7CB2BF;
+    padding-top: 0rem;
+    
+}
+
+/* Styles for Resume Left Column */
+td.left-column {
+    padding-top: 0rem;
+
+}
+
+/* Styles for Resume Right Column */
+td.right-column {
+    padding-top: 0rem;
+}
+
+/* Styles for Resume left column list */
+.left-column ul li::marker {
+    font-size: 2.5em;
+    color: #7CB2BF;
+}
+
+/* Styles for Resume right column list */
+.right-column ol li::marker {
+    font-size: 2em;
+    color: #7CB2BF;
+    
+}
+
+/* Styles for Resume center column ordered list */
+.center-column ol li::marker {
+    font-size: 2em;
+    color: #7CB2BF;
+    
+}
+
+/* Styles for Resume center column unordered list */
+.center-column ul li::marker {
+    font-size: 2.5em;
+    color: #7CB2BF;
+    
+}
+
+/* Styles for Resume images*/
+.resume-images {
+    padding-top: 1.2rem;
+}
+
+
+/* Styles default unordered list */
+ul {
+    padding-left: 2rem;
+    padding-top: 1.2rem;
+}
+
+/* Styles default ordered list */
+ol {
+    padding-left: 2rem;
+    padding-top: 1.2rem;
+}
+
+/* Styles child list items of ordered list */
+ol li{
+   padding-bottom: 2.5rem; 
+}
+
+/* Removes bottom padding of last item in ordered list */
+ol li:last-child {
+    padding-bottom: 0;
+  }
+
+/* Styles Resume Page hr line */
+hr.resume-line {
+    border: 0.2rem solid;
+    border-color:#7CB2BF;
+}
+
+/* Used for indenting parapgraph text */
+p.indented {
+    padding-left:  0.8rem;
+    font-size: 1.4rem;
+    max-width: 50rem;
+}
+
+p.small-margin {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    max-width: 35rem;
+}
+
+p.centered {
+    font-size: 1.6rem;
+}
+
+/* Styles for Resume socials list */
+.horizontal-list {
+    list-style: none;
+    display: flex;
+    padding-top: 0rem;
+}
+
+/* Styles for Resume socials list */
+.horizontal-list li {
+    margin-right: 5rem;
+
+}
+
+/* Styles for Resume contact list */
+.horizontal-list2 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles for Resume contact row */
+td.contact-row {
+    padding-top: 3rem;
+}
+
+/* Styles for Resume socials row */
+td.socials-row {
+    padding-top: 0rem;
+}
+
+/* Styles for Resume socials images */
+.socials-image {
+    border-top: 1px solid #7CB2BF; 
+    border-bottom: 1px solid #7CB2BF; 
+}
+
+
+/* Styles for Resume contact section - borders */
+#resume-contact{
+    border-top: 1px solid #7CB2BF;
+}
+
+#resume-skills, #resume-education, #resume-employment {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!!! ABOUT PAGE CSS !!!*/
+
+/* Styles about images */
+#about-intro img, #about-hobby img, #about-food img, #about-beverage img {
+    width: 100%;
+    height: 100%;
+    border: 1.5rem solid #7CB2BF;
+}
+
+/* image class for centering image */
+.image-float-center { 
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+/* Styling for image label/text */
+.image-label {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-style:solid;
+    font-style: oblique;
+    text-decoration-color:#9b9e9f;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Drone Operations, Aerial Imaging, Emergency Response, CSS */
+
+/* Used to create a container for each Project */
+.container-projects {
+    display: flex;
+    align-items: flex-start;
+    background-color:#ffffff;
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+    border: 0.1rem solid #ffffff;
+    
+    border-left: 0.8rem solid #7CB2BF;
+    padding: 2rem; 
+}
+
+
+
+
+
+
+
+
